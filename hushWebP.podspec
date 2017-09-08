@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name         		= 'hushWebP'
-  s.platform     		= 'ios'
+  s.name         		= 'HushWebP'
+  s.platform     		= :ios, "9.0"
   s.license      		= 'MIT'
   s.version      		= '0.5'
   s.homepage     		= 'https://github.com/ShopHush/iOS-WebP'
@@ -9,5 +9,7 @@ Pod::Spec.new do |s|
   s.source       		= { :git => 'git@github.com:ShopHush/iOS-WebP.git', :tag => s.version.to_s }
   s.source_files		= 'iOS-WebP/*.{h,m}'
   s.requires_arc		= true
+  s.ios.deployment_target       = "9.0"
+
   s.dependency      'libwebp', '~> 0.5.0'
 end
